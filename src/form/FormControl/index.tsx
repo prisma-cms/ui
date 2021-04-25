@@ -45,11 +45,9 @@ const FormControl: React.FC<FormControlProps> = ({
           <FormControlLabelStyled>{title}</FormControlLabelStyled>
         ) : null}
         <FormControlElementStyled>{children}</FormControlElementStyled>
-        {error?.message || helperText ? (
-          <FormControlHelperTextStyled>
-            {error?.message || helperText}
-          </FormControlHelperTextStyled>
-        ) : null}
+        <FormControlHelperTextStyled>
+          {error?.message || helperText || null}
+        </FormControlHelperTextStyled>
       </FormControlStyled>
     )
   }, [
