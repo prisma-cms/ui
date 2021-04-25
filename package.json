@@ -1,7 +1,7 @@
 {
-  "name": "@prisma-cms/component-boilerplate",
-  "description": "Component for prisma-cms",
-  "version": "0.0.0",
+  "name": "@prisma-cms/ui",
+  "version": "2.0.0",
+  "description": "UI component for @prisma-cms",
   "private": false,
   "main": "dist",
   "scripts": {
@@ -36,7 +36,16 @@
       "yarn format"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "react-hook-form": "^6.15.5",
+    "react-select": "^4.1.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0"
+  },
   "devDependencies": {
     "@babel/plugin-transform-typescript": "^7.12.1",
     "@next/bundle-analyzer": "^9.5.5",
@@ -54,8 +63,7 @@
     "@types/http-proxy-middleware": "^0.19.3",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/react-select": "^4.0.13",
     "@types/styled-components": "^5.1.4",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
@@ -108,19 +116,17 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/prisma-cms/component-boilerplate.git"
-  },
   "keywords": [
-    "prisma-cms",
-    "front",
-    "components"
+    "uikit"
   ],
   "author": "Fi1osof",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/prisma-cms/component-boilerplate/issues"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prisma-cms/ui.git"
   },
-  "homepage": "https://github.com/prisma-cms/component-boilerplate#readme"
+  "bugs": {
+    "url": "https://github.com/prisma-cms/ui/issues"
+  },
+  "homepage": "https://github.com/prisma-cms/ui#readme"
 }
